@@ -1,0 +1,144 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header Styles */
+header {
+    background-image:url(src/img/animebackground.jpg) ;
+    background: #333;
+    color: #fff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: 3px solid #e8491d;
+}
+
+header .logo {
+    float: left;
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    background-image: url(src/img/animebackground.jpg);
+    width: 50px; /* Adjust as needed */
+    margin-right: 10px;
+}
+
+header .logo h1 {
+    margin: 0;
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+header a {
+    
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    padding: 0 15px;
+}
+
+header a:hover {
+    color: #e8491d;
+}
+
+/* Hero Section Styles */
+.hero {
+    background: #5cb85c;
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.hero-content {
+    width: 80%;
+    margin: auto;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.button {
+    background: #e8491d;
+    color: #fff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.button:hover {
+    background: #c63d0e;
+}
+
+/* Announcement Section Styles */
+.announcement {
+    background: #f9f9f9;
+    padding: 10px 0;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.announcement a {
+    color: #e8491d;
+    text-decoration: none;
+}
+
+/* Welcome Section Styles */
+.welcome {
+    padding: 30px 0;
+    text-align: center;
+}
+
+/* Why Choose Section Styles */
+.why-choose {
+    padding: 30px 0;
+    background: #f9f9f9;
+    border-top: 1px solid #ddd;
+}
+
+/* Footer Styles */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Media Queries for Responsiveness */
+@media(max-width: 768px) {
+    header .logo,
+    header nav {
+        float: none;
+        text-align: center;
+    }
+
+    header nav a {
+        display: block;
+        padding: 10px;
+    }
+
+    .hero h1 {
+        font-size: 2em;
+    }
+}
