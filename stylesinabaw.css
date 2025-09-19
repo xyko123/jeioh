@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Responsive Nav</title>
+</head>
+<body>
+  
+  <!-- Navigation -->
+  <nav>
+
+    <ul id="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+
+    <!-- Hamburger -->
+    <div class="menu-toggle" id="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+
+  <!-- Header Section -->
+  <header>
+    <div class="logo">
+      <img src="img/Spider_Man-removebg-preview.png" alt="logo">
+      <h1>My Website</h1>
+    </div>
+
+    <!-- Right text + button -->
+    <div class="banner-content">
+      <h2>Welcome to hell</h2>
+      <p>We create digital solutions that make an impact.</p>
+      <button>Get Started</button>
+    </div>
+  </header>
+
+  <!-- Top Three Cards -->
+   <section class="cards">
+    <div class="card">
+      <div class="icon"></div>
+        <h3>Why Choose Drury Body shop as your Shop</h3>
+        <p>
+          Drury Body Shop is an entrepreneurial success story, From its beginning in 2000
+          owner Robert Drury began his business in his garage and a shop behind the...
+        </p>
+        <a href="#" class="btn">Learn More</a>
+    </div>
+   </section>
+
+   <section class="services-section">
+  <h2>OUR SERVICES</h2>
+  <p>Drury Body Shop is an entrepreneurial success story, From its beginning in 2000
+     owner Robert Drury began his business in his garage and a shop behind the...</p>
+
+  <div class="services">
+    <div class="box">
+      <div class="icon"></div>
+      <h3>CONSULTING</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+
+    <div class="box">
+      <div class="icon"></div>
+      <h3>FINANCE</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+
+    <div class="box">
+      <div class="icon"></div>
+      <h3>DEVELOPMENT</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Banner -->
+  <section class="banner">
+    <h1>Welcome to my Website     </h1>
+    <p>This is a simple responsive navigation with a banner.</p>
+  </section>
+
+  <!-- JavaScript -->
+  <script>
+    const menuToggle = document.getElementById("menu-toggle");
+    const navLinks = document.getElementById("nav-links");
+
+    menuToggle.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
+  </script>
+
+</body>
+</html>
